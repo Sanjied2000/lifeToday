@@ -1,0 +1,33 @@
+.container{
+    margin-top: 40px;
+}
+.content{
+    display: flex;
+    gap: 50px;
+}
+.title{
+    font-size: 32px;
+    font-weight: bold;
+}
+.mainpart{
+    flex: 6;
+}
+.menu{
+    flex: 3;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.filterName{
+ font-weight: bold;
+ color: yellowgreen;
+}
+
+@media screen and (max-width:1024px) {
+ .menu{
+    display: none;
+ }
+}

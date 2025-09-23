@@ -1,0 +1,38 @@
+.container{
+    margin-top: 40px;
+
+}
+.title{
+    font-size: 64px;
+    font-weight: 300;
+}
+.bold{
+    font-weight: 600;
+}
+
+.post{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+.textcontainer{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.imgcontainer{
+    height: 350px;
+    position: relative;
+    flex: 1;
+}
+.button{
+    padding: 12px 18px;
+    max-width: fit-content;
+    border-radius: 5%;
+    border: 0;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+}

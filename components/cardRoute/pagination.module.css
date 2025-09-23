@@ -1,0 +1,16 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.button {
+
+    background-color: crimson;
+    width: max-content;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.container{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.title{
+    display: flex;
+}
+.copy{
+    font-size: 10px;
+}
+.social{
+    display: flex;
+    gap: 20px;
+
+}
+.address{
+    font-size: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+.container{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+}

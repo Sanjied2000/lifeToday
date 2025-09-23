@@ -1,0 +1,39 @@
+.container{
+    margin-bottom: 40px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.imgcontainer{
+    height: 300px;
+    background-color: red;
+    position: relative;
+    flex: 1;
+}
+
+.textcontainer{  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.date{
+    color: gray;
+}
+.categorys{
+    color: crimson;
+}
+.desc{
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--softTextColor);
+}
+.cardtitle{
+    font-size: 24px;
+}
+.link{
+    border-bottom: 1px  solid crimson;
+    width: max-content ;
+    padding: 2px 2px;
+}

@@ -1,0 +1,48 @@
+.container{
+    margin-top: 40px;
+}
+.headline{
+    display: flex;
+    align-items: center;
+  
+}
+.title{
+    flex: 4;
+    font-size: 25px;
+}
+
+.userImage {
+    position: relative;
+    height: 45px;
+    width: 45px;
+}
+
+.postImage {
+    flex: 3;
+    position: relative;
+    height: 300px;
+
+}
+.user{
+    display: flex;
+    margin-top: 40px;
+    font-size: 15px;
+    gap: 20px;
+    align-items: center;
+}
+.category{
+    background: salmon;
+    padding: 3px;
+    border-radius: 5px;
+    
+}
+.postAndmenu{
+    display: flex;
+    gap: 40px;
+}
+.postContent{
+    flex: 4;
+    margin-top: 40px;
+    color: var(--softTextColor);
+    font-size: 20px;
+}

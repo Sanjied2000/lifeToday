@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+    
+   
+}
+
+.topcard {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    background: var(--softbg);   
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.info1{
+    color: gold;
+}
+.info2{
+    color: palevioletred;
+}
+.info3{
+    color: brown;
+}
