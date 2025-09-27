@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.commentarea{
+    border-left: 0px;border-right:0px ; border-top: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var black;
+    font-size: 20px;
+    font-family: var(--font-ubuntu);
+    outline: none;
+}
+
+
+.button{
+    background-color: crimson;
+    width: max-content;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+
+}

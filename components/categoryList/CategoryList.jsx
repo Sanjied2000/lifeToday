@@ -12,14 +12,14 @@ const CategoryList = () => {
         </div>
         <div className={styles.categories}>
           <Link
-            href="/memories"
+            href="blog/memories"
             className={`${styles.category} ${styles.memories}`}
           >
             <Image src="/memories.png" alt="" height={24} width={24}></Image>
             Memories
           </Link>
           <Link
-            href="/travel"
+            href="blog/travel"
             className={`${styles.category} ${styles.travel}`}
           >
             <Image src="/travel.png" alt="" height={24} width={24}></Image>
@@ -27,24 +27,27 @@ const CategoryList = () => {
           </Link>
 
           <Link
-            href="/cooking"
+            href="blog/cooking"
             className={`${styles.category} ${styles.cooking}`}
           >
             <Image src="/cooking.png" alt="" height={24} width={24}></Image>
             Cooking
           </Link>
           <Link
-            href="/goodwill"
+            href="blog/good_will"
             className={`${styles.category} ${styles.goodwill}`}
           >
             <Image src="/goodwill.png" alt="" height={24} width={24}></Image>
             GoodWill
           </Link>
-          <Link href="/idea" className={`${styles.category} ${styles.memories}`}>
+          <Link
+            href="blog/ideas"
+            className={`${styles.category} ${styles.memories}`}
+          >
             <Image src="/idea.png" alt="" height={24} width={24}></Image>Ideas
           </Link>
           <Link
-            href="/technology"
+            href="blog/technology"
             className={`${styles.category} ${styles.travel}`}
           >
             <Image src="/technology.png" alt="" height={24} width={24}></Image>
@@ -52,7 +55,7 @@ const CategoryList = () => {
           </Link>
 
           <Link
-            href="/technology"
+            href="blog/sports"
             className={`${styles.category} ${styles.cooking}`}
           >
             <Image src="/sports.png" alt="" height={24} width={24}></Image>
@@ -60,7 +63,7 @@ const CategoryList = () => {
           </Link>
 
           <Link
-            href="/qna"
+            href="blog/qna"
             className={`${styles.category} ${styles.goodwill}`}
           >
             <Image src="/qna.png" alt="" height={24} width={24}></Image>

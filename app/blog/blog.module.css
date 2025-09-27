@@ -25,7 +25,10 @@
  font-weight: bold;
  color: yellowgreen;
 }
-
+.activity{
+    display: flex;
+    gap: 20px;
+}
 @media screen and (max-width:1024px) {
  .menu{
     display: none;

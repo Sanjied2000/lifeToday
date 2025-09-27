@@ -26,9 +26,7 @@ const Profile = () => {
           <div className={styles.profileText}>
             <h1>{session.user.name}</h1>
             <div className={styles.paraText}>
-              <p className={styles.smallText}>Email : {session.user.id}</p>
-              <p className={styles.smallText}>Total Post : 10 </p>
-              <p className={styles.smallText}>Total Views: 50</p>
+              <p className={styles.smallText}>Email : {session.user.email}</p>
             </div>
           </div>
         </div>

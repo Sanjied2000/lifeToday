@@ -1,6 +1,7 @@
 import react from "react";
 import styles from "./featured.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const Featured = () => {
   return (
@@ -12,27 +13,25 @@ const Featured = () => {
         </h1>
 
         <div className={styles.post}>
-        
           <div className={styles.imgcontainer}>
             <Image src="/dummy.jpg" alt="" fill></Image>
           </div>
           <div className={styles.textcontainer}>
-            <h1>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              vel eaque, laborum provident minus impedit deleniti! Fugiat
-              placeat ipsam soluta?
-            </h1>
+            <h1>LifeToday – Share Stories, Ideas, and Experiences</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Perspiciatis atque voluptas dolorem officia alias, quam blanditiis
-              perferendis? Ut magnam eum quod? Nihil harum debitis dolorem cum
-              soluta earum nam possimus ut, eius fuga nisi eveniet! Molestiae
-              maxime dignissimos exercitationem natus consectetur quidem
-              distinctio impedit dolores, beatae ipsa quas, nihil architecto
-              illum dolor doloribus optio porro ullam excepturi incidunt maiores
-              eveniet?
+              LifeToday isn’t just a blog—it’s a living journal of moments,
+              ideas, and inspirations. It’s a place where writers and readers
+              come together to celebrate the small joys, big dreams, and
+              everyday experiences that shape our lives. From heartfelt personal
+              stories to creative thoughts, from tips and reflections to fun
+              explorations, LifeToday is about capturing the essence of living
+              in the present. Your voice matters here—share it, and discover the
+              beauty of life through the eyes of others.
             </p>
-            <button className={styles.button}>Read More</button>
+
+            <Link href="/about" className={styles.button}>
+              Read More
+            </Link>
           </div>
         </div>
       </div>

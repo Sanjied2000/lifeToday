@@ -1,13 +1,20 @@
 .container{
     margin-top: 40px;
-}
-.headline{
     display: flex;
-    align-items: center;
-  
+    gap: 60px;
+}
+.postAndComments{
+    flex: 6;
+}
+.postdetails{
+    margin-top: 40px;
+    
+}
+.menupart{
+    flex: 3;
 }
 .title{
-    flex: 4;
+    margin-top: 20px;
     font-size: 25px;
 }
 
@@ -18,14 +25,14 @@
 }
 
 .postImage {
-    flex: 3;
     position: relative;
     height: 300px;
+    max-width: 60%;
 
 }
 .user{
     display: flex;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 15px;
     gap: 20px;
     align-items: center;
@@ -36,12 +43,8 @@
     border-radius: 5px;
     
 }
-.postAndmenu{
-    display: flex;
-    gap: 40px;
-}
+
 .postContent{
-    flex: 4;
     margin-top: 40px;
     color: var(--softTextColor);
     font-size: 20px;

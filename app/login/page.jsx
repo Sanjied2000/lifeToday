@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 
+
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -31,7 +32,8 @@ const LoginPage = () => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.title}>
-          <h1>lifeToday</h1>
+          <Link href="/">  <h1>lifeToday</h1></Link>
+        
         </div>
 
         <form className={styles.form} onSubmit={handleLogin}>

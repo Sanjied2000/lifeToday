@@ -5,6 +5,7 @@ import styles from "./menu.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { getImage } from "@/lib/getImage";
+import { getCategory } from "@/lib/getCategory";
 import TopContribute from "../topContribute/TopContribute";
 
 const Menu = () => {
@@ -48,7 +49,7 @@ const Menu = () => {
                 />
               </div>
               <div className={styles.textcontainer}>
-                <span className={styles.category}>{post.category}</span>
+                <span className={styles.category}>{getCategory(post.category)}</span>
                 <h3>{post.title}</h3>
                 <div className={styles.details}>
                   <span className={styles.username}>{post.user_name}</span>

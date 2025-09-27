@@ -3,6 +3,7 @@ import styles from "./card.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { getImage } from "@/lib/getImage";
+import { getCategory } from "@/lib/getCategory";
 
 const Card = ({ post }) => {
   return (
@@ -15,7 +16,7 @@ const Card = ({ post }) => {
         <div className={styles.textcontainer}>
           <div className={styles.details}>
             <span className={styles.date}>{post.updatedAt.slice(0,10)} </span>
-            <span className={styles.categorys}>- {post.category.toUpperCase()}</span>
+            <span className={styles.categorys}>- {getCategory(post.category)}</span>
           </div>
           <h1 className={styles.cardtitle}>{post.title}</h1>
           <p className={styles.desc}>{post.content.split(" ").slice(0, 20).join(" ")}...</p>

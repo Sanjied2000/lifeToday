@@ -1,0 +1,27 @@
+.container {
+    margin-top: 60px;
+}
+
+.userImage {
+    position: relative;
+    height: 45px;
+    width: 45px;
+}
+
+.comment {
+    margin-top: 20px;
+}
+
+.userInfo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.commentText{
+ display: flex;
+ gap: 60px;
+}
+.Date{
+    padding-top: 2px;
+}

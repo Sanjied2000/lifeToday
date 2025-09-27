@@ -3,7 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { ThemeProvider } from "next-themes";
-import Providers from "./providers"; // <-- import the provider you create
+import Providers from "./providers";
+
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
@@ -17,6 +18,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en" className={ubuntu.className} suppressHydrationWarning>
       <body>
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
             <div className="container">
               <div className="wrapper">
                 <Navbar />
+                
                 {children}
                 <Footer />
               </div>

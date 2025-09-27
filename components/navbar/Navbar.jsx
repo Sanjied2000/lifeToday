@@ -1,11 +1,17 @@
+'use client'
 import react from "react";
 import styles from "./navbar.module.css";
 import ThemeToggle from "../themeToggle/ThemeToggle";
 import AuthLinks from "../authLinks/AuthLinks";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
+  const pathname = usePathname();
+  if(pathname=="/login"|| pathname=="/signup"){
+    return null;
+  }
   return (
     <>
       <div className={styles.container}>
@@ -39,7 +45,7 @@ const Navbar = () => {
             className={styles.icon}
           ></Image>
         </div>
-        <div className={styles.logo}>lifeToday</div>
+        <div className={styles.logo}><Link href="/">  lifeToday</Link></div>
         <div>
           <div className={styles.links}>
             <ThemeToggle />

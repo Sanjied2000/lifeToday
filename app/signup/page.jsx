@@ -44,7 +44,7 @@ const SignUpPage = () => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.title}>
-          <h1>lifeToday</h1>
+       <Link href="/">  <h1>lifeToday</h1></Link>
         </div>
 
         <form className={styles.form} onSubmit={handleSignup}>

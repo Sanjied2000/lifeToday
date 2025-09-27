@@ -4,6 +4,10 @@ import { useEffect, useState } from "react";
 import styles from "./singlepost.module.css";
 import Image from "next/image";
 import Menu from "@/components/menu/menu";
+import Commentbox from "@/components/commentbox/Commentbox";
+import Comments from "@/components/comments/Comments";
+import { getImage } from "@/lib/getImage";
+import { getCategory } from "@/lib/getCategory";
 
 export default function SinglePost({ params }) {
   const unwrappedParams = use(params);
@@ -35,8 +39,11 @@ export default function SinglePost({ params }) {
 
   return (
     <div className={styles.container}>
-      <div className={styles.info}>
-        <div className={styles.headline}>
+      <div className={styles.postAndComments} >
+        <div className={styles.postdetails}>
+          <div className={styles.postImage}>
+            <Image src={getImage(post.category)} alt="post image" fill />
+          </div>
           <div className={styles.title}>
             <h1>{post.title}</h1>
             <div className={styles.user}>
@@ -44,24 +51,21 @@ export default function SinglePost({ params }) {
                 <Image src="/user.png" alt="user" fill />
               </div>
               <div className={styles.usertextInfo}>
-                <div className={styles.userName}>
-                  {post.user_name}
-                </div>
+                <div className={styles.userName}>{post.user_name}</div>
                 <div className={styles.date}>
-                  {new Date(post.createdAt).toLocaleDateString()}
+                {post.updatedAt.slice(0,10)} 
                 </div>
               </div>
-              <div className={styles.category}>{post.category}</div>
+              <div className={styles.category}>{getCategory(post.category)}</div>
             </div>
           </div>
-          <div className={styles.postImage}>
-            <Image src="/dummy.jpg" alt="post image" fill />
-          </div>
+          <div className={styles.postContent}>{post.content}</div>
         </div>
+      <Commentbox></Commentbox>
+      <Comments/>
       </div>
 
-      <div className={styles.postAndmenu}>
-        <div className={styles.postContent}>{post.content}</div>
+      <div className={styles.menupart}>
         <Menu />
       </div>
     </div>
