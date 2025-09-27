@@ -7,7 +7,9 @@
     height: 45px;
     width: 45px;
 }
-
+.title{
+ margin-bottom: 60px;
+}
 .comment {
     margin-top: 20px;
 }

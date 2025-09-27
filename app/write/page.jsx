@@ -64,7 +64,7 @@ const WritePage = () => {
           type="text"
           className={styles.title}
           placeholder="Title"
-          maxLength={100}
+          maxLength={40}
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />

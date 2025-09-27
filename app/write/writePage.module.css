@@ -32,3 +32,13 @@
 .error{
     color: crimson;
 }
+@media screen and (max-width:768px) {
+ .title{
+    font-size: 20px;
+ }
+ .post{
+    font-size: 15px;
+ }
+
+
+}

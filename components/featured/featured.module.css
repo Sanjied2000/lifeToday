@@ -22,9 +22,15 @@
     flex-direction: column;
     gap: 20px;
 }
+.textcontainer2{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
 .imgcontainer{
-    height: 350px;
     position: relative;
+    width: 500px ;
+    height: 350px;
     flex: 1;
 }
 .button{
@@ -35,4 +41,21 @@
     cursor: pointer;
     background-color: crimson;
     color: white;
+}
+@media screen and (max-width:768px) {
+ .title{
+    font-size: 44px;
+ }
+ .textcontainer{
+    display: none;
+ }
+ .imgcontainer{
+    height: 300px;
+ }
+ .textcontainer2{
+    display: flex;
+    margin-top: 20px;
+ }
+
+
 }

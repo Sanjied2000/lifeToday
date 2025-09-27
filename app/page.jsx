@@ -22,8 +22,8 @@ export default function Home() {
           <p>Load More in <Link href="/blog" className={styles.feedlink}>Feeds</Link></p>
           
           </div>
-
-          <Menu/>          
+          <div className={styles.menupart}> <Menu/></div>
+                   
         </div>
       </div>
     </div>

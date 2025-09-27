@@ -27,7 +27,7 @@
 .postImage {
     position: relative;
     height: 300px;
-    max-width: 60%;
+    max-width: 65%;
 
 }
 .user{
@@ -48,4 +48,13 @@
     margin-top: 40px;
     color: var(--softTextColor);
     font-size: 20px;
+}
+@media screen and (max-width:1024px) {
+ .menupart{
+    display: none;
+    
+ }
+ .postImage{
+   max-width: 95%;
+ }
 }

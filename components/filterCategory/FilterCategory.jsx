@@ -39,7 +39,7 @@ function FilterCategory() {
           <Link href="/blog/good_will" className={styles.link}>
             Good Will
           </Link>
-          <Link href="/blog/idea" className={styles.link}>
+          <Link href="/blog/ideas" className={styles.link}>
             Idea
           </Link>
           <Link href="/blog/sports" className={styles.link}>

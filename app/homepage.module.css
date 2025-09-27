@@ -15,3 +15,12 @@
     border-bottom: 1px solid crimson;
     font-weight: bold;
 }
+.menupart{
+    flex: 3;
+}
+
+@media screen and (max-width:1024px) {
+ .menupart{
+    display: none;
+ }
+}
