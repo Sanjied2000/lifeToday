@@ -4,14 +4,15 @@
 }
 
 .username {
-    display: flex;
-    gap:10px ;
+  display: flex;
+  gap:5px ;
   cursor: pointer;
   padding: 8px 12px;
   background: var(--softbg);
   border-radius: 8px;
   transition: background 0.2s ease;
   align-items: center;
+  font-size: 14px;
 }
 
 .dropdown {
@@ -68,4 +69,12 @@
 
 .button:hover {
   background: darkred;
+}
+
+@media screen and (max-width:1024px) {
+  
+  .username{
+    font-size: 12px;
+     padding: 6px 10px;
+  }
 }

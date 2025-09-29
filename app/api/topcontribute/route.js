@@ -8,7 +8,7 @@ export async function GET() {
     const topUsers = await Posts.aggregate([
       {
         $group: {
-          _id: "$user_name",   // group by user_name
+          _id: "$user_name", // group by user_name
           postCount: { $sum: 1 }, // count number of posts
         },
       },
@@ -20,9 +20,9 @@ export async function GET() {
       },
       {
         $project: {
-          _id: 0,             
-          userName: "$_id",   // rename _id → userName
-          postCount: 1,       // keep postCount
+          _id: 0,
+          userName: "$_id", // rename _id → userName
+          postCount: 1, // keep postCount
         },
       },
     ]);

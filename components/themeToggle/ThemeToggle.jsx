@@ -17,7 +17,7 @@ export default function ThemeToggle() {
       className={`${styles.toggle} ${theme === "dark" ? styles.dark : ""}`}
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
-      <div className={styles.circle}></div>
+      
       <div className={styles.icon}>
         {theme === "light" ? "☀️" : "🌙"}
       </div>

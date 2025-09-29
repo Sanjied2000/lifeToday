@@ -27,3 +27,19 @@
 .Date{
     padding-top: 2px;
 }
+
+@media screen and (max-width:1024px) {
+    .userInfo{
+        gap: 10px;
+    }
+    .commentText{
+        gap: 20px;
+    }
+    .container{
+        font-size: 10px;
+    }
+    .userImage{
+        height: 25px;
+        width: 25px;
+    }
+}

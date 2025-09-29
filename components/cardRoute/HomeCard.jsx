@@ -23,7 +23,7 @@ const HomeCard = () => {
     fetchPosts();
   }, []);
 
-  return <CardList posts={posts} />;
+  return <CardList posts={posts} self={false} />;
 };
 
 export default HomeCard;

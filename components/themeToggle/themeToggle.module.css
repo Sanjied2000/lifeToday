@@ -1,47 +1,25 @@
 .toggle {
-  width: 40px;
-  height: 20px;
-  background: black;
-  
-  border-radius: 50px;
+  background: var(--softbg);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
+  padding: 6px;
   position: relative;
   cursor: pointer;
+  border-radius: 8px;
   transition: background 0.3s ease;
 }
 
-.toggle.dark {
-  background: white;
-  
-}
-
-.circle {
-  width: 15px;
-  height: 15px;
-  background:white;
-  border-radius: 50%;
-  position: absolute;
-  left: 5px;
-  top: 3px;
-  transition: transform 0.3s ease;
-}
-
-.toggle.dark .circle {
-  transform: translateX(18px);
-  background: black;
-}
 
 .icon {
-  font-size: 10px;
+  font-size: 14px;
   margin-left: auto;
   margin-right: 1px;
   transition: color 0.3s ease;
 }
 
-.toggle.dark .icon {
-  margin-left: 1px;
-  margin-right: auto;
+@media screen and (max-width:1024px) {
+  .toggle{
+    padding: 4px;
+  }
 }

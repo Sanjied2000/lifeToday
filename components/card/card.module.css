@@ -1,39 +1,66 @@
-.container{
+.container {
     margin-bottom: 40px;
     display: flex;
     gap: 40px;
     align-items: center;
 }
 
-.imgcontainer{
+.imgcontainer {
     height: 300px;
-    background-color: red;
+    background-color: var(--softbg);
     position: relative;
     flex: 1;
 }
 
-.textcontainer{  
+
+.textcontainer {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.date{
+
+.date {
     color: gray;
 }
-.categorys{
+
+.categorys {
     color: crimson;
 }
-.desc{
+
+.desc {
     font-size: 16px;
     font-weight: 200;
     color: var(--softTextColor);
 }
-.cardtitle{
+
+.cardtitle {
     font-size: 24px;
 }
-.link{
-    border-bottom: 1px  solid crimson;
-    width: max-content ;
+
+.link {
+    border-bottom: 1px solid crimson;
+    width: max-content;
     padding: 2px 2px;
+}
+.actions{
+    display: flex;
+    gap: 10px;
+}
+.buttonlink{
+    border: none;
+    border-bottom: 1px solid crimson;
+    font-family: var(--font-ubuntu);
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+    
+}
+@media screen and (max-width:768px) {
+    .container {
+        display: grid;
+    }
+    .imgcontainer{
+        height: 200px;
+    }
 }

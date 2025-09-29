@@ -30,7 +30,7 @@ const FeedsCard = ({ category, sortType }) => {
 
   return (
     <div>
-      <CardList posts={posts} />
+      <CardList posts={posts} self={false}/>
 
       {/* Pagination Controls */}
       <div className={styles.pagination}>

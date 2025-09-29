@@ -21,3 +21,20 @@ export async function GET(req, { params }) {
     return Response.json({ message: "Something went wrong" }, { status: 500 });
   }
 }
+export async function DELETE(req, { params }) {
+  try {
+    await connectMongoDB();
+    const { post_id } = params;
+
+    const deletedPost = await Posts.findByIdAndDelete(post_id);
+
+    if (!deletedPost) {
+      return Response.json({ message: "Post not found" }, { status: 404 });
+    }
+
+    return Response.json({ message: "Post deleted successfully" }, { status: 200 });
+  } catch (error) {
+    console.error(error);
+    return Response.json({ message: "Something went wrong" }, { status: 500 });
+  }
+}

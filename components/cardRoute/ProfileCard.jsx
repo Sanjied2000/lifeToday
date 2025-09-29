@@ -28,7 +28,7 @@ const ProfileCard = ({ user_id }) => {
 
   return (
     <div>
-      <CardList posts={posts} />
+      <CardList posts={posts} self={true} />
 
       {/* Pagination Controls */}
       <div className={styles.pagination}>

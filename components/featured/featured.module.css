@@ -46,16 +46,12 @@
  .title{
     font-size: 44px;
  }
- .textcontainer{
-    display: none;
+ .post{
+    display: grid;
  }
  .imgcontainer{
-    height: 300px;
+    width: 100%;
+    height: 200px;
  }
- .textcontainer2{
-    display: flex;
-    margin-top: 20px;
- }
-
 
 }

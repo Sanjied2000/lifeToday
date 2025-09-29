@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import react from "react";
 import styles from "./navbar.module.css";
 import ThemeToggle from "../themeToggle/ThemeToggle";
@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
-  if(pathname=="/login"|| pathname=="/signup"){
+  if (pathname == "/login" || pathname == "/signup") {
     return null;
   }
   return (
@@ -45,19 +45,15 @@ const Navbar = () => {
             className={styles.icon}
           ></Image>
         </div>
-        <div className={styles.logo}><Link href="/">  lifeToday</Link></div>
+        <div className={styles.logo}>
+          <Link href="/"> lifeToday</Link>
+        </div>
         <div>
           <div className={styles.links}>
             <ThemeToggle />
             <Link href="/blog" className={styles.link}>
-              
-              <Image
-                src="/feeds.png"
-                alt=""
-                width={20}
-                height={20}
-              ></Image>
-              Feeds
+              <Image src="/feeds.png" alt="" width={15} height={15}></Image>
+              <p className={styles.linkText}>Feeds</p>
             </Link>
             <AuthLinks />
           </div>
