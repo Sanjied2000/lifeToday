@@ -10,7 +10,11 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const pathname = usePathname();
   if (pathname == "/login" || pathname == "/signup") {
-    return null;
+    return (<>
+    <div className={styles.void}></div>
+    </>
+
+    );
   }
   return (
     <>

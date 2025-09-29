@@ -43,7 +43,7 @@ export default function AuthStatus() {
             width={15}
           ></Image>
 
-          {username}
+          <div className={styles.username}>{username}</div>
         </div>
 
         {/* Dropdown */}

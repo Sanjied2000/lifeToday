@@ -56,7 +56,7 @@ const LoginPage = () => {
           />
 
           <button className={styles.button} type="submit">
-            Login
+            Log In
           </button>
         </form>
 

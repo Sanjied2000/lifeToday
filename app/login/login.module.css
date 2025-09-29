@@ -4,12 +4,14 @@
     align-items: center;
     margin-top: 50px;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.wrapper{
+
+.wrapper {
     background-color: var(--softbg);
     padding: 120px 80px;
     text-align: center;
@@ -53,9 +55,10 @@
     background: crimson;
     font-weight: bold;
 }
-.errorText{
+
+.errorText {
     text-align: start;
-    color:crimson;
+    color: crimson;
 }
 
 .signup {
@@ -64,9 +67,41 @@
     justify-content: end;
     font-size: 20px;
     margin-top: 20px;
-    
+
 }
-.signuplink{
-    color:crimson;
+
+.signuplink {
+    color: crimson;
     padding-right: 5px;
+}
+
+@media screen and (max-width:768px) {
+    .wrapper {
+        padding: 80px 20px;
+    }
+
+    .email {
+        width: 250px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .password {
+        width: 250px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .errorText {
+        font-size: 10px;
+    }
+
+    .signup {
+        font-size: 12px;
+    }
+
+    .button {
+        height: 30;
+        font-size: 12px;
+    }
 }

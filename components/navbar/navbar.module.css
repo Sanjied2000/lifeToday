@@ -50,6 +50,10 @@
     color: var(--textColor);
 }
 
+.void{
+    height: 10px;
+    background-color: var(--bg);
+}
 
 @media screen and (max-width:1024px) {
     .social {

@@ -85,7 +85,7 @@ const SignUpPage = () => {
           />
 
           <button className={styles.button} type="submit">
-            SignUp
+            Sign Up
           </button>
         </form>
 
