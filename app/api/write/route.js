@@ -5,7 +5,7 @@ export async function POST(req) {
   try {
     const body = await req.json();    
 
-    const { user_id, user_name, title, category,content } = body;
+    const { user_id, user_name,url, title, category,content } = body;
 
     if (!user_id ||!user_name || !title || !category || !content) {
       return new Response(
@@ -15,7 +15,7 @@ export async function POST(req) {
     }
     await connectMongoDB();
 
-    await Posts.create({user_id,user_name,title,category,content});
+    await Posts.create({user_id,user_name,url,title,category,content});
 
     return new Response(JSON.stringify({ message: "Post created successfully" }), {
       status: 201,

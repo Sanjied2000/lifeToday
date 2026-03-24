@@ -3,12 +3,15 @@
 import React, { useState } from "react";
 import styles from "./writePage.module.css";
 import { useSession } from "next-auth/react";
-import { useEffect } from "react";
 import CategoryDropdown from "@/components/categoryDropdown/CategoryDropdown";
 import { useRouter } from "next/navigation";
+import UploadImage from "@/components/uploadImage/uploadImage";
+import { useImageStore } from "@/store/imageStore";
+
 
 const WritePage = () => {
   const { data: session, status } = useSession();
+  const imageUrl = useImageStore((state) => state.imageUrl);
 
 
   const [title, setTitle] = useState("");
@@ -29,6 +32,7 @@ const WritePage = () => {
     const postData = {
       user_id: session.user.id,
       user_name:session.user.name,
+      url: imageUrl || "",
       title,
       category,
       content,
@@ -70,6 +74,9 @@ const WritePage = () => {
         />
 
         <CategoryDropdown onSelect={(value) => setCategory(value)} />
+        <UploadImage />
+        
+      
 
         <textarea
           className={styles.post}

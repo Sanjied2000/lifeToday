@@ -1,21 +1,29 @@
 import mongoose, { Schema } from "mongoose";
 
+const commentSchema = new Schema(
+  {
+    user_name: { type: String, required: true },
+    text: { type: String, required: true },
+  },
+  { timestamps: true },
+);
+
 const postsSchema = new Schema(
-  {        
+  {
     user_id: {
       type: String,
       required: true,
-      
     },
-    user_name:{
+    user_name: {
       type: String,
       required: true,
-      unique: true,
     },
     title: {
       type: String,
       required: true,
-      unique: true,
+    },
+    url: {
+      type: String,
     },
     category: {
       type: String,
@@ -30,8 +38,17 @@ const postsSchema = new Schema(
       default: 0,
       min: 0,
     },
+    status: {
+      type: String,
+      default: "unpublished",
+    },
+    stars: {
+      type: Number,
+      default: 0,
+    },
+    comments: [commentSchema],
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 const Posts = mongoose.models.Posts || mongoose.model("Posts", postsSchema);

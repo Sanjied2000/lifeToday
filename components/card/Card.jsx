@@ -18,7 +18,7 @@ const Card = ({ post, self }) => {
     <>
       <div className={styles.container}>
         <div className={styles.imgcontainer}>
-          <Image src={getImage(post.category)} alt="Image" fill></Image>
+          <Image src={post.url} alt="Image" fill></Image>
         </div>
 
         <div className={styles.textcontainer}>
